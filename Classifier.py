@@ -6,7 +6,7 @@ class MyClassifier:
 
     def predict(self,list1):
         names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-        df = pd.read_csv("iris1.csv", names=names)
+        df = pd.read_excel("iris.xls", names=names)
         print(df)
         print(df.groupby("class").size())
         # Split-out validation dataset

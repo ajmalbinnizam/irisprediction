@@ -6,7 +6,7 @@ app.secret_key = 'any random string'
 
 @app.route('/')
 def student():
-   return render_template('leaf.html')
+   return render_template('home.html')
 
 @app.route('/result',methods = ['POST', 'GET'])
 def result():
